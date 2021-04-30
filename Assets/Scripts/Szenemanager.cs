@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Szenemanager : MonoBehaviour
 {
@@ -18,15 +19,25 @@ public class Szenemanager : MonoBehaviour
     */
     #endregion
 
-    
+
     void Start()
     {
-        
+    
     }
 
 
     void Update()
     {
+        if(Input.GetKeyDown("t"))
+        {
+            SceneManager.CreateScene("test");
+            Debug.Log("Created Szene");
+        }
+        if(Input.GetKeyDown("g"))
+        {
+            SceneManager.GetSceneByName("test");
+            Debug.Log("Got Szene");
+        }
         
     }
 }

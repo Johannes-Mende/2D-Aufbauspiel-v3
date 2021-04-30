@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public Inputs I;
     public GameLogic GL;
     public Settings S;
+    public Szenemanager SM;
 
 
     void Awake ()
