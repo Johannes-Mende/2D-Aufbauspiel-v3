@@ -205,21 +205,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3700541877675471650, guid: efd4a5e4fac7f124a9c1ac74828c5a2a, type: 3}
   m_PrefabInstance: {fileID: 20524358}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &44664360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 44664359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54084ba5e6bfa824989d734182ae31ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  silverAmounttext: {fileID: 833729672}
-  PlayerAbbauAmount: 1
-  SilverAmountplayer: 0
 --- !u!1 &132968380
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,7 +555,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -657,7 +642,7 @@ GameObject:
   - component: {fileID: 862238299}
   - component: {fileID: 862238298}
   - component: {fileID: 862238300}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -47601,7 +47586,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
