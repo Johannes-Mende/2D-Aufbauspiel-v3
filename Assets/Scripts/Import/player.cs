@@ -11,15 +11,19 @@ public class player : MonoBehaviour
     public float rayDistance;
     public Vector2 jumpForce;
 
-
+#region Tile Abbauen
     public GameObject selectedObject;       //Raycasthit2D
     public Tilemap tiles;
     public Tile tile;
     public Vector3Int location;
+#endregion
 
+#region Inventory
+    public InventoryObject inventory;           //Inventory System
+#endregion
     void Awake()
     {
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 60; //Muss in Settings Script
         access = this;
         tiles = GameObject.Find("Tilemap").GetComponent<Tilemap>(); //GetT
     }
@@ -28,7 +32,7 @@ public class player : MonoBehaviour
     {
         grounded = IsGrounded();
         Debug.DrawRay (transform.position, -Vector2.up, Color.red, rayDistance);
-        Mining();
+        //Mining();
 
         if(Input.GetMouseButton(0))
         {
@@ -59,7 +63,7 @@ public class player : MonoBehaviour
         }
         
     }
-    
+    [System.Obsolete("Use GetT in player script")]
     public void Mining()
     {
         /*Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -91,4 +95,20 @@ public class player : MonoBehaviour
             Debug.Log("No Tile");
         }
     }
+
+#region Inventory (Item aufsammeln)
+    public void OnTriggerEnter2D(Collider2D other) 
+    {
+        var item = other.GetComponent<Item>();
+        if (item)
+        {
+            inventory.AddItem(item.item, 1);
+            Destroy(other.gameObject);
+        }
+    }
+    private void OnApplicationQuit() 
+    {
+        inventory.Container.Clear();        
+    }
+#endregion
 }

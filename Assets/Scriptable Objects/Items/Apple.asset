@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 953376dcf1e730949a4da8ab31bd895e, type: 3}
+  m_Name: Apple
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5960876146494175039, guid: 50a19191ab631a44dbaa41bb34c838a3, type: 3}
+  type: 0
+  description: Hey Apple!!
+  restoreHealthValue: 5
